@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="login_test" verbose="10">
+		<groups>
+			<dependencies>
+				<group name="" depends-on="agentHome"></group>
+			</dependencies>
+		</groups>
+		<classes>
+			<class name="login.TC_001_Login"></class>
+		</classes>
+	</test> <!--Test -->
+
+
+	<test thread-count="5" name="User_Test">
+		<classes>
+			<class name="User.TC_001_User"></class>
+		</classes>
+	</test> <!--Test -->
+
+
+</suite> <!--Suite -->
